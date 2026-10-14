@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"ArrayUtils"},{"p":"<Unnamed>","l":"DynamicArray"},{"p":"practice1_1","l":"FullName"},{"p":"practice1_1","l":"Home"},{"p":"practice1_1","l":"Human"},{"p":"<Unnamed>","l":"Main"},{"p":"practice1_1","l":"Point"},{"p":"practice1_1","l":"Time"}];updateSearchResults();
