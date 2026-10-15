@@ -10,7 +10,7 @@ package practice1_5;
 //2.	Написать по одному примеру использования каждого метода.
 //3.	Вывести на экран примеры и результаты их выполнения в формате «1/3 * 2/3 = 2/9»
 //4.	Посчитать f1.sum(f2).div(f3).minus(5)
-public final class Fractions {
+public final class Fractions extends Number {
     private  final int numerator;
     private  final int denominator;
 
@@ -71,6 +71,26 @@ public final class Fractions {
     public String toString() {
         return numerator + "/" + denominator;
     }
+
+    @Override
+    public int intValue() {
+        return (int) doubleValue();
+    }
+
+    @Override
+    public long longValue() {
+        return (long) doubleValue();
+    }
+
+    @Override
+    public float floatValue() {
+        return (float) numerator/ (float) denominator;
+    }
+
+    @Override
+    public double doubleValue() {
+        return (double) numerator/(double) denominator;
+    }
 }
 //1.6.4 Дроби. Измените сущность Дробь из задачи 1.5.5. Реализуйте следующие требования:
 //•	Дробь не может быть изменена после создания
@@ -78,10 +98,3 @@ public final class Fractions {
 //Продемонстрируйте работоспособность решения на примерах.
 //2.1.1 Запретная Дробь. Измените сущность Дробь, полученную в задаче 1.6.4.
 // Гарантируйте, что невозможно создать такой подвид дроби, который позволял бы создавать Дроби с изменяемым состоянием.
-
-//
-//ПОЧЕМУ ФРАКШЕН НЕ НАМБЕР????
-//ЗАПРЕТИТЬ ПОТОМКОВ КОТОРЫЕ ЧТО ТО МЕНЯЮТ
-//
-//
-//        EXTANDS NUMBER базовый класс

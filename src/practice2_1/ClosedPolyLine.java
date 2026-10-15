@@ -28,10 +28,13 @@ public class ClosedPolyLine extends PolyLine {
         super(polyLine);
     }
 
-    public List<Point> toNormolizedPoints(){
-        List <Point> res = super.toNormolizedPoints();
-        if (res.size() < 2){ return  res;}
-        return res;
+    @Override
+    public double len() {
+        List<Point> pts = getPoints();
+        if (pts.size() < 2) return 0;
+
+        // Длина обычной ломаной + замыкающий отрезок (от последней точки к первой)
+        return super.len() + new Line(pts.get(pts.size() - 1), pts.get(0)).len();
     }
 }
 

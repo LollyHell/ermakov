@@ -58,10 +58,10 @@ public class PolyLine {
         }
     }
 
-    public List<Point> toNormolizedPoints(){
-        return null;
+    public List<Point> toNormolizedPoints() {
+        return new ArrayList<>(this.points);
     }
-    public final double len() {
+    public  double len() {
         List<Point> points = toNormolizedPoints();
         double sum = 0;
        for (int i = 0; i < points.size()-1; i++){
