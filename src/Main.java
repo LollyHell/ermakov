@@ -4,6 +4,10 @@ import practice1_4.Human2;
 import practice1_5.*;
 import practice2_1.ClosedPolyLine;
 import practice2_1.TwoWayCity;
+import practice2_2.Birds;
+import practice2_2.Cuckoo;
+import practice2_2.Parrot;
+import practice2_2.Sparrow;
 
 /**
  * Главный класс программы для запуска класса {@link ArrayUtils}
@@ -350,6 +354,9 @@ public class Main {
 
         System.out.println(sum(1, 2.5));
 
+        System.out.println(new Sparrow().sing());
+        System.out.println(new Parrot("джава-джава, ты могуч, ты гоняешь стаи на пересдачу").sing());
+        System.out.println(new Cuckoo().sing());
     }
 
     public static double sum(Number ... nums){
